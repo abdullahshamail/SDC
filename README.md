@@ -68,3 +68,8 @@ This project relies on standard Python scientific computing libraries. We recomm
     pip install numpy pandas scipy scikit-learn matplotlib
     pip install -U sentence-transformers
     ```
+
+4.  **Run experiments (on synthetic data):**
+    ```bash
+    python runExperiments.py
+    ```
