@@ -32,8 +32,9 @@ The codebase is organized into modules representing different algorithmic approa
 ├── runExperiments.py     # Main entry point for running experiments (currently written for synthethic data)
 ├── utils.py              # Helper functions for data loading, preprocessing, and logging
 └── .gitignore            # Git configuration
+```
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 
 ### Prerequisites
 
