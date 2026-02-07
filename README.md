@@ -21,12 +21,49 @@ The core algorithms address the challenge of discovering **Relaxed Moving Cluste
 
 The codebase is organized into modules representing different algorithmic approaches to the problem:
 
+```text
+
 ├── brute_force/          # Baseline implementation
 │   └── ...               # Exact but computationally expensive method (O(N^2))
 ├── ed_sac/               # Efficient Detection of SAC
 │   └── ...               # Incremental algorithm using incremental diversity
 ├── ed_sac_grid/          # Grid-Based SAC (Optimized)
 │   └── ...               # Optimized algorithm using spatial grid indexing for faster neighbor search
-├── runExperiments.py     # Main entry point for running benchmarks and experiments
+├── runExperiments.py     # Main entry point for running experiments (currently written for synthethic data)
 ├── utils.py              # Helper functions for data loading, preprocessing, and logging
 └── .gitignore            # Git configuration
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+This project relies on standard Python scientific computing libraries. We recommend using Python 3.8 or higher.
+
+* **NumPy:** Vectorized operations.
+* **Pandas:** Data manipulation and CSV I/O.
+* **SciPy / Scikit-learn:** Spatial queries and distance metrics.
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/abdullahshamail/SAC.git](https://github.com/abdullahshamail/SAC.git)
+    cd SAC
+    ```
+
+2.  **Set up a virtual environment (Recommended):**
+    ```bash
+    python -m venv venv
+    
+    # On Windows:
+    venv\Scripts\activate
+    
+    # On macOS/Linux:
+    source venv/bin/activate
+    ```
+
+3.  **Install dependencies:**
+    ```bash
+    pip install numpy pandas scipy scikit-learn matplotlib
+    pip install -U sentence-transformers
+    ```
